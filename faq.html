@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 | エン不動産株式会社</title>
+    <meta name="description" content="エン不動産によくお寄せいただく質問とその回答をまとめました。売却・購入・投資に関するご不明な点はこちらをご確認ください。">
+    <meta name="keywords" content="エン不動産,よくある質問,FAQ,不動産,売却,購入,投資,大分">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#logoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div class="logo-text">
+                            <h1><a href="index.html" style="text-decoration: none; color: inherit;">エン不動産</a></h1>
+                            <p>EN REAL ESTATE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">ホーム</a>
+                        <a href="company.html" class="nav-link">会社概要</a>
+                        <a href="services.html" class="nav-link">事業内容</a>
+                        <a href="properties.html" class="nav-link">物件紹介</a>
+                        <a href="testimonials.html" class="nav-link">お客様の声</a>
+                        <a href="faq.html" class="nav-link active">よくある質問</a>
+                        <a href="contact.html" class="nav-link contact-btn">お問い合わせ</a>
+                    </div>
+                    
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>よくある質問</h1>
+                <p>お客様からよくお寄せいただくご質問にお答えします</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">ホーム</a>
+                    <span>></span>
+                    <span>よくある質問</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Search -->
+    <section class="faq-search-section">
+        <div class="container">
+            <div class="search-box">
+                <h3>質問を検索</h3>
+                <div class="search-input-wrapper">
+                    <input type="text" id="faqSearch" placeholder="キーワードで検索（例：査定、手数料、相続など）">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>カテゴリ別によくある質問</h2>
+                <p>お探しの内容に該当するカテゴリをお選びください</p>
+            </div>
+            <div class="faq-category-tabs">
+                <button class="faq-tab active" data-category="all">すべて</button>
+                <button class="faq-tab" data-category="sale">売却について</button>
+                <button class="faq-tab" data-category="purchase">購入について</button>
+                <button class="faq-tab" data-category="investment">投資について</button>
+                <button class="faq-tab" data-category="service">サービスについて</button>
+                <button class="faq-tab" data-category="other">その他</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Items -->
+    <section class="faq-items-section">
+        <div class="container">
+            <div class="faq-list" id="faqList">
+                <!-- 売却について -->
+                <div class="faq-item" data-category="sale" data-keywords="査定 時間 無料 期間">
+                    <div class="faq-question">
+                        <h4>査定にはどのくらい時間がかかりますか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>通常、現地調査から査定結果のご提示まで1〜3日程度いただいております。お急ぎの場合は即日対応も可能ですので、お電話でご相談ください。</p>
+                        <p>机上査定（簡易査定）であれば、物件情報をお聞きしてから数時間以内にお答えできます。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="sale" data-keywords="査定 無料 料金 費用">
+                    <div class="faq-question">
+                        <h4>査定は無料ですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、査定は完全無料です。現地調査も含めて一切費用はかかりません。</p>
+                        <p>査定後に必ずしも弊社と契約していただく必要もございませんので、お気軽にご依頼ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="sale" data-keywords="売却 流れ 手順 期間">
+                    <div class="faq-question">
+                        <h4>売却の流れを教えてください</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>売却の流れは以下の通りです：</p>
+                        <ol>
+                            <li>お問い合わせ・ご相談</li>
+                            <li>現地調査・査定</li>
+                            <li>査定結果のご報告</li>
+                            <li>媒介契約または買取契約の締結</li>
+                            <li>販売活動または決済準備</li>
+                            <li>売買契約締結</li>
+                            <li>決済・お引き渡し</li>
+                        </ol>
+                        <p>通常、売却完了まで1〜3ヶ月程度の期間を要します。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="sale" data-keywords="相続 相続物件 古い 築古">
+                    <div class="faq-question">
+                        <h4>相続した物件の相談もできますか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、相続物件のご相談も承っております。相続登記がお済みでない場合でも、まずはお気軽にご相談ください。</p>
+                        <p>古い物件や築年数の経った物件でも買取可能です。権利関係が複雑な場合でも、司法書士と連携してサポートいたします。</p>
+                    </div>
+                </div>
+
+                <!-- 購入について -->
+                <div class="faq-item" data-category="purchase" data-keywords="頭金 住宅ローン 融資">
+                    <div class="faq-question">
+                        <h4>頭金がなくても住宅購入は可能ですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>頭金なしでも住宅購入は可能です。フルローン（物件価格の100%融資）に対応している金融機関をご紹介いたします。</p>
+                        <p>ただし、頭金があった方が金利面で有利になる場合が多いので、お客様の状況に応じて最適なプランをご提案いたします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="purchase" data-keywords="物件 見学 内覧 予約">
+                    <div class="faq-question">
+                        <h4>物件見学は事前予約が必要ですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、物件見学には事前予約が必要です。現在入居中の物件や、売主様のご都合もございますので、必ず事前にご連絡ください。</p>
+                        <p>ご希望日時をお伺いして、見学可能な日程を調整いたします。土日祝日でも対応可能です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="purchase" data-keywords="諸費用 手数料 初期費用">
+                    <div class="faq-question">
+                        <h4>物件購入時の諸費用はどのくらいかかりますか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>物件購入時の諸費用は、一般的に物件価格の7〜10%程度です。主な内訳は以下の通りです：</p>
+                        <ul>
+                            <li>仲介手数料</li>
+                            <li>登記費用</li>
+                            <li>印紙税</li>
+                            <li>火災保険料</li>
+                            <li>住宅ローン手数料</li>
+                            <li>固定資産税・都市計画税の日割り分</li>
+                        </ul>
+                        <p>詳細な金額は物件により異なりますので、具体的にはご相談時に詳しくご説明いたします。</p>
+                    </div>
+                </div>
+
+                <!-- 投資について -->
+                <div class="faq-item" data-category="investment" data-keywords="利回り 収益 投資 リスク">
+                    <div class="faq-question">
+                        <h4>投資用物件のリスクについて教えてください</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>不動産投資には以下のようなリスクがあります：</p>
+                        <ul>
+                            <li>空室リスク：入居者が見つからない期間の家賃収入減少</li>
+                            <li>家賃下落リスク：築年数経過に伴う家賃の下落</li>
+                            <li>修繕リスク：建物の老朽化による修繕費用の発生</li>
+                            <li>金利上昇リスク：ローン金利上昇による返済負担増加</li>
+                        </ul>
+                        <p>これらのリスクを最小限に抑えるため、立地選択や収支計画について詳しくアドバイスいたします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="investment" data-keywords="初心者 投資 始め方">
+                    <div class="faq-question">
+                        <h4>不動産投資初心者ですが、何から始めればよいですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>まずは以下のステップから始めることをお勧めします：</p>
+                        <ol>
+                            <li>投資目的・目標の明確化</li>
+                            <li>予算・資金計画の検討</li>
+                            <li>エリア・物件タイプの選定</li>
+                            <li>物件の収支シミュレーション</li>
+                            <li>融資相談・事前審査</li>
+                        </ol>
+                        <p>弊社では初心者の方向けの無料相談も実施しておりますので、お気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+
+                <!-- サービスについて -->
+                <div class="faq-item" data-category="service" data-keywords="手数料 仲介手数料 料金">
+                    <div class="faq-question">
+                        <h4>仲介手数料はいくらですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>仲介手数料は法定手数料に基づいて計算いたします：</p>
+                        <ul>
+                            <li>売買価格200万円以下：5%</li>
+                            <li>売買価格200万円〜400万円：4%+2万円</li>
+                            <li>売買価格400万円超：3%+6万円</li>
+                        </ul>
+                        <p>※上記金額は税別です。成約時のみお支払いいただく成功報酬制です。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="service" data-keywords="エリア 対応地域 遠方">
+                    <div class="faq-question">
+                        <h4>遠方の物件でも対応可能ですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>大分県内であればどちらでも対応いたします。福岡県、熊本県などの近隣県についてもご相談ください。</p>
+                        <p>遠方のお客様にはオンライン相談やTV電話での打ち合わせも可能です。お気軽にご相談ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="service" data-keywords="営業時間 年中無休 土日">
+                    <div class="faq-question">
+                        <h4>営業時間を教えてください</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>エン不動産は年中無休で営業しております。土日祝日も対応可能です。</p>
+                        <p>お電話でのお問い合わせは基本的に9:00〜21:00で受け付けておりますが、緊急の場合は時間外でも対応いたします。</p>
+                        <p>メールでのお問い合わせは24時間受付中です。</p>
+                    </div>
+                </div>
+
+                <!-- その他 -->
+                <div class="faq-item" data-category="other" data-keywords="駐車場 来社 アクセス">
+                    <div class="faq-question">
+                        <h4>駐車場はありますか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、専用駐車場をご用意しております。ご来社の際は事前にお電話でご連絡ください。</p>
+                        <p>場所がご不明の場合は、お気軽にお電話でお問い合わせください。丁寧にご案内いたします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other" data-keywords="秘密 個人情報 プライバシー">
+                    <div class="faq-question">
+                        <h4>相談内容の秘密は守られますか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、お客様からお聞きした情報は厳重に管理し、秘密は必ずお守りいたします。</p>
+                        <p>宅地建物取引業法に基づく守秘義務を遵守し、個人情報保護法に従って適切に取り扱います。</p>
+                        <p>第三者に情報を開示することは一切ありませんので、安心してご相談ください。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="other" data-keywords="オンライン 遠隔 コロナ">
+                    <div class="faq-question">
+                        <h4>オンラインでの相談は可能ですか？</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>はい、ZoomやSkypeを使ったオンライン相談も承っております。</p>
+                        <p>資料の画面共有や、物件写真・図面の確認なども可能です。遠方のお客様や、お忙しい方にご好評いただいております。</p>
+                        <p>ご希望の方は事前にご連絡ください。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No results message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fas fa-search"></i>
+                    <h3>該当する質問が見つかりませんでした</h3>
+                    <p>お探しの内容が見つからない場合は、お気軽にお問い合わせください。</p>
+                    <a href="contact.html" class="btn-primary">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="faq-contact-section">
+        <div class="container">
+            <div class="faq-contact-content">
+                <h2>他にご不明な点はございませんか？</h2>
+                <p>こちらに掲載されていない質問や、より詳しい内容についてはお気軽にお問い合わせください。<br>
+                   専門スタッフが丁寧にお答えいたします。</p>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <i class="fas fa-phone"></i>
+                        <h4>お電話でのお問い合わせ</h4>
+                        <p>097-529-5834</p>
+                        <small>年中無休 9:00〜21:00</small>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fas fa-envelope"></i>
+                        <h4>メールでのお問い合わせ</h4>
+                        <p>enfudosan.co@gmail.com</p>
+                        <small>24時間受付中</small>
+                    </div>
+                </div>
+                <div class="contact-buttons">
+                    <a href="contact.html" class="btn-primary">お問い合わせフォーム</a>
+                    <a href="tel:097-529-5834" class="btn-secondary">今すぐ電話</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#footerLogoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <h3>エン不動産株式会社</h3>
+                            <p>EN REAL ESTATE CO., LTD.</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        不動産を通じて縁を創造する企業として、<br>
+                        大分の皆様に安心と信頼をお届けします。
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="services.html">収益物件買取・再販</a></li>
+                        <li><a href="services.html">戸建買取・再販</a></li>
+                        <li><a href="services.html">売買仲介</a></li>
+                        <li><a href="properties.html">物件紹介</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="testimonials.html">お客様の声</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>大分県大分市王子南町10番17-302号</p>
+                        <p><i class="fas fa-phone"></i>097-529-5834</p>
+                        <p><i class="fas fa-envelope"></i>enfudosan.co@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>宅地建物取引業免許申請中</p>
+                    <p>&copy; 2025 エン不動産株式会社. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <style>
+        /* Page Header Styles */
+        .page-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ Search */
+        .faq-search-section {
+            background: var(--background-light);
+            padding: 60px 0;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .search-box h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+        }
+
+        .search-input-wrapper input {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            border: 2px solid #E5E7EB;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: var(--text-dark);
+            background: white;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-input-wrapper input:focus {
+            outline: none;
+            border-color: var(--primary-purple);
+        }
+
+        .search-input-wrapper i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-gray);
+            font-size: 1.2rem;
+        }
+
+        /* FAQ Categories */
+        .faq-categories-section {
+            background: white;
+            padding: 60px 0 40px;
+        }
+
+        .faq-category-tabs {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .faq-tab {
+            padding: 12px 25px;
+            border: 2px solid var(--primary-purple);
+            background: transparent;
+            color: var(--primary-purple);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .faq-tab.active,
+        .faq-tab:hover {
+            background: var(--primary-purple);
+            color: white;
+        }
+
+        /* FAQ Items */
+        .faq-items-section {
+            background: white;
+            padding: 40px 0 100px;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--background-light);
+            border-radius: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item.hidden {
+            display: none;
+        }
+
+        .faq-question {
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--background-light);
+        }
+
+        .faq-question.active {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .faq-question h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 0;
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .faq-question i {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .faq-answer.active {
+            padding: 20px 25px 25px;
+            max-height: 1000px;
+        }
+
+        .faq-answer p {
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .faq-answer ul,
+        .faq-answer ol {
+            color: var(--text-gray);
+            line-height: 1.7;
+            padding-left: 20px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 8px;
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .no-results-content {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .no-results i {
+            font-size: 4rem;
+            color: var(--text-gray);
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        .no-results h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .no-results p {
+            color: var(--text-gray);
+            margin-bottom: 25px;
+        }
+
+        /* FAQ Contact */
+        .faq-contact-section {
+            background: var(--background-gradient);
+            padding: 80px 0;
+        }
+
+        .faq-contact-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-contact-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .faq-contact-content p {
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            line-height: 1.7;
+        }
+
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-option {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-option i {
+            font-size: 2.5rem;
+            color: var(--primary-purple);
+            margin-bottom: 15px;
+        }
+
+        .contact-option h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .contact-option p {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 5px;
+        }
+
+        .contact-option small {
+            color: var(--text-gray);
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .faq-category-tabs {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .faq-tab {
+                font-size: 0.85rem;
+                padding: 10px 15px;
+            }
+
+            .faq-question {
+                padding: 18px 20px;
+            }
+
+            .faq-question h4 {
+                font-size: 1rem;
+            }
+
+            .faq-answer.active {
+                padding: 15px 20px 20px;
+            }
+
+            .contact-options {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-buttons a {
+                min-width: 250px;
+            }
+        }
+    </style>
+
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const faqTabs = document.querySelectorAll('.faq-tab');
+            const searchInput = document.getElementById('faqSearch');
+            const noResults = document.getElementById('noResults');
+
+            // FAQ item toggle
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+
+                question.addEventListener('click', function() {
+                    const isActive = question.classList.contains('active');
+
+                    // Close all other FAQ items
+                    faqItems.forEach(otherItem => {
+                        otherItem.querySelector('.faq-question').classList.remove('active');
+                        otherItem.querySelector('.faq-answer').classList.remove('active');
+                    });
+
+                    // Toggle current item
+                    if (!isActive) {
+                        question.classList.add('active');
+                        answer.classList.add('active');
+                    }
+                });
+            });
+
+            // Category filtering
+            faqTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    faqTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+                    filterFAQs(category, '');
+                });
+            });
+
+            // Search functionality
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                const activeCategory = document.querySelector('.faq-tab.active').getAttribute('data-category');
+                filterFAQs(activeCategory, searchTerm);
+            });
+
+            function filterFAQs(category, searchTerm) {
+                let visibleItems = 0;
+
+                faqItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    const keywords = item.getAttribute('data-keywords').toLowerCase();
+                    const questionText = item.querySelector('h4').textContent.toLowerCase();
+                    const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
+
+                    let matchesCategory = category === 'all' || itemCategory === category;
+                    let matchesSearch = searchTerm === '' || 
+                                       keywords.includes(searchTerm) || 
+                                       questionText.includes(searchTerm) || 
+                                       answerText.includes(searchTerm);
+
+                    if (matchesCategory && matchesSearch) {
+                        item.classList.remove('hidden');
+                        item.style.display = 'block';
+                        visibleItems++;
+                    } else {
+                        item.classList.add('hidden');
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Show/hide no results message
+                if (visibleItems === 0) {
+                    noResults.style.display = 'block';
+                } else {
+                    noResults.style.display = 'none';
+                }
+            }
+
+            // Auto-expand FAQ if URL hash matches
+            const hash = window.location.hash;
+            if (hash) {
+                const targetItem = document.querySelector(hash);
+                if (targetItem && targetItem.classList.contains('faq-item')) {
+                    const question = targetItem.querySelector('.faq-question');
+                    const answer = targetItem.querySelector('.faq-answer');
+                    question.classList.add('active');
+                    answer.classList.add('active');
+                    
+                    // Scroll to item
+                    setTimeout(() => {
+                        targetItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 100);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

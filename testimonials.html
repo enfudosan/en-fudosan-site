@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お客様の声 | エン不動産株式会社</title>
+    <meta name="description" content="エン不動産をご利用いただいたお客様からの喜びの声をご紹介。売却・購入・投資のリアルな体験談をお読みください。">
+    <meta name="keywords" content="エン不動産,お客様の声,体験談,評判,口コミ,大分,不動産">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#logoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div class="logo-text">
+                            <h1><a href="index.html" style="text-decoration: none; color: inherit;">エン不動産</a></h1>
+                            <p>EN REAL ESTATE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">ホーム</a>
+                        <a href="company.html" class="nav-link">会社概要</a>
+                        <a href="services.html" class="nav-link">事業内容</a>
+                        <a href="properties.html" class="nav-link">物件紹介</a>
+                        <a href="testimonials.html" class="nav-link active">お客様の声</a>
+                        <a href="faq.html" class="nav-link">よくある質問</a>
+                        <a href="contact.html" class="nav-link contact-btn">お問い合わせ</a>
+                    </div>
+                    
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>お客様の声</h1>
+                <p>エン不動産をご利用いただいたお客様からの喜びの声</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">ホーム</a>
+                    <span>></span>
+                    <span>お客様の声</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction -->
+    <section class="satisfaction-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>お客様満足度</h2>
+                <p>エン不動産のサービスをご利用いただいたお客様の満足度調査結果</p>
+            </div>
+            <div class="satisfaction-stats">
+                <div class="satisfaction-item">
+                    <div class="satisfaction-percentage">97%</div>
+                    <div class="satisfaction-label">総合満足度</div>
+                    <div class="satisfaction-description">お取引いただいたお客様の97%が「満足」と回答</div>
+                </div>
+                <div class="satisfaction-item">
+                    <div class="satisfaction-percentage">95%</div>
+                    <div class="satisfaction-label">対応の速さ</div>
+                    <div class="satisfaction-description">「迅速で丁寧な対応だった」とのお声をいただいています</div>
+                </div>
+                <div class="satisfaction-item">
+                    <div class="satisfaction-percentage">98%</div>
+                    <div class="satisfaction-label">リピート意向</div>
+                    <div class="satisfaction-description">「また利用したい」「知人に紹介したい」との高評価</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials by Category -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>お客様の体験談</h2>
+                <p>実際にサービスをご利用いただいたお客様からの生の声をお届けします</p>
+            </div>
+            
+            <!-- Category Filters -->
+            <div class="testimonial-filters">
+                <button class="testimonial-filter active" data-category="all">すべて</button>
+                <button class="testimonial-filter" data-category="sale">売却</button>
+                <button class="testimonial-filter" data-category="purchase">購入</button>
+                <button class="testimonial-filter" data-category="investment">投資</button>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- 売却のお客様の声 -->
+                <div class="testimonial-card" data-category="sale">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>田中様（50代・男性）</h4>
+                                <p>大分市在住 / 戸建売却</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            相続で困っていた古いアパートを、エン不動産さんが即日で査定・買取してくれて、本当に助かりました。
+                            他社では「古すぎて価値がない」と言われていたのですが、こちらでは適正な価格で買い取っていただけました。
+                            対応も丁寧で安心できました。松田さん、田辺さんには感謝しています。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">即日対応</span>
+                        <span class="tag">適正価格</span>
+                        <span class="tag">丁寧な対応</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="investment">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>佐藤様（40代・女性）</h4>
+                                <p>福岡市在住 / 収益物件購入</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            初めての不動産投資で不安でしたが、こちらで紹介された収益物件は数字も透明で、購入後のフォローもあり安心して取引できました。
+                            利回り8.5%という好条件の物件を紹介していただき、現在も順調に運用できています。
+                            投資初心者にも分かりやすく説明していただけて良かったです。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">透明な取引</span>
+                        <span class="tag">アフターフォロー</span>
+                        <span class="tag">初心者サポート</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="purchase">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>山口様（30代・夫婦）</h4>
+                                <p>大分市在住 / 戸建購入</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            子どもが生まれたタイミングでマイホームを探していました。
+                            エン不動産さんは私たちの細かい要望にも丁寧に対応してくださり、理想通りの物件を見つけることができました。
+                            リノベーション済みの戸建でしたが、とても綺麗で家族全員が大満足です。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">丁寧な対応</span>
+                        <span class="tag">理想の物件</span>
+                        <span class="tag">ファミリー向け</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="sale">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>高橋様（60代・男性）</h4>
+                                <p>別府市在住 / マンション売却</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            転勤のため急いで売却する必要がありましたが、エン不動産さんのスピード対応のおかげで希望通りのスケジュールで売却できました。
+                            査定も市場価格より高く、手続きもスムーズでした。年中無休で対応してくれるのも助かります。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">スピード対応</span>
+                        <span class="tag">高価買取</span>
+                        <span class="tag">年中無休</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="investment">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>中村様（50代・男性）</h4>
+                                <p>東京都在住 / 収益物件購入</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            地方投資に興味があり、大分の収益物件を探していました。
+                            エン不動産さんは遠方の私にもオンラインで丁寧に対応してくれ、現地の詳しい情報も教えてくれました。
+                            おかげで安心して投資することができ、現在も良好な運用実績です。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">遠方対応</span>
+                        <span class="tag">オンライン対応</span>
+                        <span class="tag">地方投資</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-category="purchase">
+                    <div class="testimonial-header">
+                        <div class="customer-info">
+                            <div class="customer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="customer-details">
+                                <h4>鈴木様（40代・女性）</h4>
+                                <p>中津市在住 / 中古マンション購入</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <blockquote>
+                            一人暮らし用のマンションを探していて、エン不動産さんに相談しました。
+                            予算内で駅近の良い物件を見つけてくださり、住宅ローンの手続きもサポートしていただけました。
+                            女性一人でも安心して相談できる雰囲気で、とても信頼できる会社だと思います。
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-tags">
+                        <span class="tag">女性安心</span>
+                        <span class="tag">ローンサポート</span>
+                        <span class="tag">駅近物件</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Summary -->
+    <section class="review-summary-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>お客様からの評価ポイント</h2>
+                <p>多くのお客様から高く評価されているエン不動産の特徴</p>
+            </div>
+            <div class="review-points">
+                <div class="review-point">
+                    <div class="point-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>迅速な対応</h3>
+                    <p>お問い合わせから査定、契約まで、すべての過程でスピーディーな対応を心がけています。</p>
+                    <div class="point-stats">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-text">のお客様が「対応が早い」と評価</span>
+                    </div>
+                </div>
+                <div class="review-point">
+                    <div class="point-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>信頼できる取引</h3>
+                    <p>透明性の高い価格設定と、お客様の立場に立った誠実な対応で信頼を築いています。</p>
+                    <div class="point-stats">
+                        <span class="stat-number">97%</span>
+                        <span class="stat-text">のお客様が「信頼できる」と回答</span>
+                    </div>
+                </div>
+                <div class="review-point">
+                    <div class="point-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>親身なサポート</h3>
+                    <p>不動産取引が初めての方でも安心していただけるよう、丁寧にサポートいたします。</p>
+                    <div class="point-stats">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-text">のお客様が「また利用したい」と回答</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>あなたも満足のいく取引を体験してみませんか？</h2>
+                <p>エン不動産では、一人ひとりのお客様に寄り添った丁寧なサービスを提供しています。<br>
+                   不動産に関するどんなご相談でも、お気軽にお問い合わせください。</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">無料相談を申し込む</a>
+                    <a href="tel:097-529-5834" class="btn-secondary">今すぐ電話</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#footerLogoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <h3>エン不動産株式会社</h3>
+                            <p>EN REAL ESTATE CO., LTD.</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        不動産を通じて縁を創造する企業として、<br>
+                        大分の皆様に安心と信頼をお届けします。
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="services.html">収益物件買取・再販</a></li>
+                        <li><a href="services.html">戸建買取・再販</a></li>
+                        <li><a href="services.html">売買仲介</a></li>
+                        <li><a href="properties.html">物件紹介</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="testimonials.html">お客様の声</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>大分県大分市王子南町10番17-302号</p>
+                        <p><i class="fas fa-phone"></i>097-529-5834</p>
+                        <p><i class="fas fa-envelope"></i>enfudosan.co@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>宅地建物取引業免許申請中</p>
+                    <p>&copy; 2025 エン不動産株式会社. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <style>
+        /* Page Header Styles */
+        .page-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Satisfaction Section */
+        .satisfaction-section {
+            background: var(--background-light);
+        }
+
+        .satisfaction-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .satisfaction-item {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .satisfaction-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .satisfaction-percentage {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .satisfaction-label {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .satisfaction-description {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: white;
+        }
+
+        .testimonial-filters {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-filter {
+            padding: 10px 25px;
+            border: 2px solid var(--primary-purple);
+            background: transparent;
+            color: var(--primary-purple);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .testimonial-filter.active,
+        .testimonial-filter:hover {
+            background: var(--primary-purple);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: var(--background-light);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card.hidden {
+            display: none;
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .customer-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .customer-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .customer-details h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .customer-details p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-bottom: 0;
+        }
+
+        .testimonial-rating {
+            display: flex;
+            gap: 3px;
+        }
+
+        .testimonial-rating i {
+            color: #F59E0B;
+            font-size: 1rem;
+        }
+
+        .testimonial-content {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-content blockquote {
+            color: var(--text-dark);
+            line-height: 1.7;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        .testimonial-content blockquote::before {
+            content: '"';
+            font-size: 2rem;
+            color: var(--primary-purple);
+            position: absolute;
+            left: -10px;
+            top: -5px;
+        }
+
+        .testimonial-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Review Summary */
+        .review-summary-section {
+            background: var(--background-gradient);
+        }
+
+        .review-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .review-point {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .review-point:hover {
+            transform: translateY(-5px);
+        }
+
+        .point-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .review-point h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .review-point p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .point-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-text {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .testimonial-filters {
+                justify-content: center;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .testimonial-rating {
+                align-self: flex-end;
+            }
+
+            .satisfaction-stats,
+            .review-points {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <script>
+        // Testimonial filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.testimonial-filter');
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filterCategory = this.getAttribute('data-category');
+
+                    // Filter testimonials
+                    testimonialCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        
+                        if (filterCategory === 'all' || cardCategory === filterCategory) {
+                            card.classList.remove('hidden');
+                            card.style.display = 'block';
+                        } else {
+                            card.classList.add('hidden');
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Animate satisfaction percentages
+            const percentageElements = document.querySelectorAll('.satisfaction-percentage');
+            
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const element = entry.target;
+                        const finalValue = parseInt(element.textContent);
+                        let currentValue = 0;
+                        const increment = finalValue / 50; // Animation duration
+
+                        const animation = setInterval(() => {
+                            currentValue += increment;
+                            if (currentValue >= finalValue) {
+                                currentValue = finalValue;
+                                clearInterval(animation);
+                            }
+                            element.textContent = Math.round(currentValue) + '%';
+                        }, 20);
+
+                        observer.unobserve(element);
+                    }
+                });
+            }, observerOptions);
+
+            percentageElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>

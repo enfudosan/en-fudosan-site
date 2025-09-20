@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物件紹介 | エン不動産株式会社</title>
+    <meta name="description" content="エン不動産の取扱物件一覧。収益アパート、戸建住宅、区分マンションなど、大分市・別府市・中津市の優良物件をご紹介。">
+    <meta name="keywords" content="エン不動産,物件紹介,収益物件,戸建,マンション,大分,別府,中津">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#logoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div class="logo-text">
+                            <h1><a href="index.html" style="text-decoration: none; color: inherit;">エン不動産</a></h1>
+                            <p>EN REAL ESTATE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">ホーム</a>
+                        <a href="company.html" class="nav-link">会社概要</a>
+                        <a href="services.html" class="nav-link">事業内容</a>
+                        <a href="properties.html" class="nav-link active">物件紹介</a>
+                        <a href="testimonials.html" class="nav-link">お客様の声</a>
+                        <a href="faq.html" class="nav-link">よくある質問</a>
+                        <a href="contact.html" class="nav-link contact-btn">お問い合わせ</a>
+                    </div>
+                    
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <h1>物件紹介</h1>
+                <p>厳選した優良物件をご紹介いたします</p>
+                <nav class="breadcrumb">
+                    <a href="index.html">ホーム</a>
+                    <span>></span>
+                    <span>物件紹介</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Search -->
+    <section class="property-search-section">
+        <div class="container">
+            <div class="search-filters">
+                <h3>物件を絞り込む</h3>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-category="all">すべて</button>
+                    <button class="filter-tab" data-category="apartment">収益アパート</button>
+                    <button class="filter-tab" data-category="house">戸建住宅</button>
+                    <button class="filter-tab" data-category="mansion">区分マンション</button>
+                </div>
+                <div class="filter-options">
+                    <select class="filter-select" id="areaFilter">
+                        <option value="">エリア選択</option>
+                        <option value="大分市">大分市</option>
+                        <option value="別府市">別府市</option>
+                        <option value="中津市">中津市</option>
+                    </select>
+                    <select class="filter-select" id="priceFilter">
+                        <option value="">価格帯</option>
+                        <option value="0-1000">1,000万円以下</option>
+                        <option value="1000-3000">1,000万円〜3,000万円</option>
+                        <option value="3000-5000">3,000万円〜5,000万円</option>
+                        <option value="5000-">5,000万円以上</option>
+                    </select>
+                    <button class="filter-reset" id="resetFilters">絞り込み解除</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Listings -->
+    <section class="property-listings-section">
+        <div class="container">
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- 収益アパート -->
+                <div class="property-card" data-category="apartment" data-area="大分市" data-price="2800">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dc00b41c-a4ff-448b-b96f-cf1e45d18ff7" alt="グランメゾン王子">
+                        <div class="property-badge investment">投資物件</div>
+                        <div class="property-yield">利回り 8.2%</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>グランメゾン王子</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>大分市王子町</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-building"></i>1K×8戸</span>
+                            <span><i class="fas fa-calendar"></i>築15年</span>
+                            <span><i class="fas fa-train"></i>大分駅徒歩12分</span>
+                        </div>
+                        <div class="property-financial">
+                            <div class="price">
+                                <span class="price-label">売買価格</span>
+                                <span class="price-value">2,800万円</span>
+                            </div>
+                            <div class="income">
+                                <span class="income-label">年収入</span>
+                                <span class="income-value">230万円</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="グランメゾン王子">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-category="apartment" data-area="別府市" data-price="1950">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dc00b41c-a4ff-448b-b96f-cf1e45d18ff7" alt="別府温泉ハイツ">
+                        <div class="property-badge investment">投資物件</div>
+                        <div class="property-yield">利回り 9.1%</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>別府温泉ハイツ</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>別府市北浜</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-building"></i>1DK×6戸</span>
+                            <span><i class="fas fa-calendar"></i>築12年</span>
+                            <span><i class="fas fa-train"></i>別府駅徒歩8分</span>
+                        </div>
+                        <div class="property-financial">
+                            <div class="price">
+                                <span class="price-label">売買価格</span>
+                                <span class="price-value">1,950万円</span>
+                            </div>
+                            <div class="income">
+                                <span class="income-label">年収入</span>
+                                <span class="income-value">178万円</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="別府温泉ハイツ">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-category="apartment" data-area="中津市" data-price="3200">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/dc00b41c-a4ff-448b-b96f-cf1e45d18ff7" alt="中津駅前レジデンス">
+                        <div class="property-badge investment">投資物件</div>
+                        <div class="property-yield">利回り 7.8%</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>中津駅前レジデンス</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>中津市豊田町</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-building"></i>2DK×10戸</span>
+                            <span><i class="fas fa-calendar"></i>築8年</span>
+                            <span><i class="fas fa-train"></i>中津駅徒歩5分</span>
+                        </div>
+                        <div class="property-financial">
+                            <div class="price">
+                                <span class="price-label">売買価格</span>
+                                <span class="price-value">3,200万円</span>
+                            </div>
+                            <div class="income">
+                                <span class="income-label">年収入</span>
+                                <span class="income-value">250万円</span>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="中津駅前レジデンス">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 戸建住宅 -->
+                <div class="property-card" data-category="house" data-area="大分市" data-price="2300">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/da56d08a-688b-42b7-abc8-ac27f8c6abea" alt="南大分ファミリーハウス">
+                        <div class="property-badge family">ファミリー向け</div>
+                        <div class="property-new">リノベ済</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>南大分ファミリーハウス</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>大分市南大分</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-home"></i>4LDK</span>
+                            <span><i class="fas fa-calendar"></i>築25年（リノベ済）</span>
+                            <span><i class="fas fa-car"></i>駐車場2台</span>
+                        </div>
+                        <div class="property-specs">
+                            <div class="spec">
+                                <span>土地面積</span>
+                                <span>165.52㎡（50.08坪）</span>
+                            </div>
+                            <div class="spec">
+                                <span>建物面積</span>
+                                <span>98.45㎡（29.78坪）</span>
+                            </div>
+                        </div>
+                        <div class="property-price-single">
+                            <span class="price-label">販売価格</span>
+                            <span class="price-value">2,300万円</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="南大分ファミリーハウス">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-category="house" data-area="別府市" data-price="1800">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/da56d08a-688b-42b7-abc8-ac27f8c6abea" alt="別府温泉の家">
+                        <div class="property-badge family">ファミリー向け</div>
+                        <div class="property-special">温泉付</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>別府温泉の家</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>別府市鶴見</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-home"></i>3LDK</span>
+                            <span><i class="fas fa-calendar"></i>築18年（リフォーム済）</span>
+                            <span><i class="fas fa-hot-tub"></i>温泉引き込み</span>
+                        </div>
+                        <div class="property-specs">
+                            <div class="spec">
+                                <span>土地面積</span>
+                                <span>142.35㎡（43.06坪）</span>
+                            </div>
+                            <div class="spec">
+                                <span>建物面積</span>
+                                <span>85.62㎡（25.90坪）</span>
+                            </div>
+                        </div>
+                        <div class="property-price-single">
+                            <span class="price-label">販売価格</span>
+                            <span class="price-value">1,800万円</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="別府温泉の家">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 区分マンション -->
+                <div class="property-card" data-category="mansion" data-area="大分市" data-price="780">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/7f1b4e92-2bcd-49ff-9730-1c18c6553360" alt="パークサイドマンション大分">
+                        <div class="property-badge investment">投資・居住</div>
+                        <div class="property-yield">利回り 6.5%</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>パークサイドマンション大分</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>大分市中央町</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-building"></i>3F/15F</span>
+                            <span><i class="fas fa-home"></i>2LDK</span>
+                            <span><i class="fas fa-calendar"></i>築10年</span>
+                        </div>
+                        <div class="property-specs">
+                            <div class="spec">
+                                <span>専有面積</span>
+                                <span>65.32㎡（19.76坪）</span>
+                            </div>
+                            <div class="spec">
+                                <span>管理費・修繕積立金</span>
+                                <span>月額18,500円</span>
+                            </div>
+                        </div>
+                        <div class="property-price-single">
+                            <span class="price-label">販売価格</span>
+                            <span class="price-value">780万円</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="パークサイドマンション大分">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property-card" data-category="mansion" data-area="大分市" data-price="1200">
+                    <div class="property-image">
+                        <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/7f1b4e92-2bcd-49ff-9730-1c18c6553360" alt="オーシャンビュー別府">
+                        <div class="property-badge residential">居住用</div>
+                        <div class="property-view">海望む</div>
+                    </div>
+                    <div class="property-info">
+                        <h3>オーシャンビュー別府</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i>別府市北浜</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-building"></i>8F/12F</span>
+                            <span><i class="fas fa-home"></i>3LDK</span>
+                            <span><i class="fas fa-calendar"></i>築6年</span>
+                        </div>
+                        <div class="property-specs">
+                            <div class="spec">
+                                <span>専有面積</span>
+                                <span>78.45㎡（23.73坪）</span>
+                            </div>
+                            <div class="spec">
+                                <span>管理費・修繕積立金</span>
+                                <span>月額22,000円</span>
+                            </div>
+                        </div>
+                        <div class="property-price-single">
+                            <span class="price-label">販売価格</span>
+                            <span class="price-value">1,200万円</span>
+                        </div>
+                        <div class="property-actions">
+                            <button class="btn-primary property-contact" data-property="オーシャンビュー別府">詳細を見る</button>
+                            <button class="btn-outline property-favorite"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Statistics -->
+    <section class="property-stats-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>取扱実績</h2>
+                <p>エン不動産の実績をご紹介</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="stat-number">25件</div>
+                    <div class="stat-label">収益物件取扱</div>
+                    <div class="stat-description">設立以来の累計取扱件数</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="stat-number">18件</div>
+                    <div class="stat-label">戸建売買成約</div>
+                    <div class="stat-description">ファミリー向け戸建の成約実績</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-number">8.2%</div>
+                    <div class="stat-label">平均利回り</div>
+                    <div class="stat-description">投資物件の平均利回り実績</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number">3日</div>
+                    <div class="stat-label">平均査定日数</div>
+                    <div class="stat-description">査定から価格提示までの平均日数</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>気になる物件はございましたか？</h2>
+                <p>物件の詳細情報やご見学のお申し込みなど、お気軽にお問い合わせください。<br>
+                   お客様のご希望に合わせた物件探しもサポートいたします。</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">物件について問い合わせる</a>
+                    <a href="tel:097-529-5834" class="btn-secondary">今すぐ電話</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="footerLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M30 50 Q50 30 70 50 Q50 70 30 50 M30 50 Q10 50 30 50 M70 50 Q90 50 70 50" 
+                                  stroke="url(#footerLogoGradient)" 
+                                  stroke-width="4" 
+                                  fill="none" 
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <h3>エン不動産株式会社</h3>
+                            <p>EN REAL ESTATE CO., LTD.</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        不動産を通じて縁を創造する企業として、<br>
+                        大分の皆様に安心と信頼をお届けします。
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>サービス</h4>
+                    <ul>
+                        <li><a href="services.html">収益物件買取・再販</a></li>
+                        <li><a href="services.html">戸建買取・再販</a></li>
+                        <li><a href="services.html">売買仲介</a></li>
+                        <li><a href="properties.html">物件紹介</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="company.html">会社概要</a></li>
+                        <li><a href="testimonials.html">お客様の声</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>大分県大分市王子南町10番17-302号</p>
+                        <p><i class="fas fa-phone"></i>097-529-5834</p>
+                        <p><i class="fas fa-envelope"></i>enfudosan.co@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>宅地建物取引業免許申請中</p>
+                    <p>&copy; 2025 エン不動産株式会社. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Detail Modal -->
+    <div id="propertyModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <style>
+        /* Page Header Styles */
+        .page-header {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Property Search */
+        .property-search-section {
+            background: var(--background-light);
+            padding: 40px 0;
+        }
+
+        .search-filters h3 {
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-tab {
+            padding: 10px 20px;
+            border: 2px solid var(--primary-purple);
+            background: transparent;
+            color: var(--primary-purple);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: var(--primary-purple);
+            color: white;
+        }
+
+        .filter-options {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-select {
+            padding: 10px 15px;
+            border: 1px solid #D1D5DB;
+            border-radius: 8px;
+            background: white;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            min-width: 150px;
+        }
+
+        .filter-reset {
+            padding: 10px 20px;
+            background: var(--text-gray);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .filter-reset:hover {
+            background: var(--text-dark);
+        }
+
+        /* Property Cards */
+        .property-listings-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .property-image {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .property-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .property-card:hover .property-image img {
+            transform: scale(1.05);
+        }
+
+        .property-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .property-badge.investment {
+            background: var(--primary-gradient);
+        }
+
+        .property-badge.family {
+            background: linear-gradient(135deg, #10B981, #059669);
+        }
+
+        .property-badge.residential {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+        }
+
+        .property-yield,
+        .property-new,
+        .property-special,
+        .property-view {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .property-new {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+        }
+
+        .property-special {
+            background: linear-gradient(135deg, #8B5CF6, #7C3AED);
+        }
+
+        .property-view {
+            background: linear-gradient(135deg, #06B6D4, #0891B2);
+        }
+
+        .property-info {
+            padding: 25px;
+        }
+
+        .property-info h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .property-location {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .property-location i {
+            color: var(--primary-purple);
+        }
+
+        .property-details {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            flex-wrap: wrap;
+        }
+
+        .property-details span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .property-details i {
+            color: var(--primary-purple);
+        }
+
+        /* Financial Info */
+        .property-financial {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--background-light);
+            border-radius: 10px;
+        }
+
+        .property-financial .price,
+        .property-financial .income {
+            text-align: center;
+        }
+
+        .price-label,
+        .income-label {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-bottom: 5px;
+        }
+
+        .price-value,
+        .income-value {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .property-price-single {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--background-light);
+            border-radius: 10px;
+        }
+
+        .property-price-single .price-label {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-bottom: 5px;
+        }
+
+        .property-price-single .price-value {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Property Specs */
+        .property-specs {
+            margin-bottom: 20px;
+        }
+
+        .spec {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #E5E7EB;
+            font-size: 0.9rem;
+        }
+
+        .spec:last-child {
+            border-bottom: none;
+        }
+
+        .spec span:first-child {
+            color: var(--text-gray);
+        }
+
+        .spec span:last-child {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Property Actions */
+        .property-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .property-contact {
+            flex: 1;
+            font-size: 0.9rem;
+            padding: 10px 20px;
+        }
+
+        .property-favorite {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        .property-favorite.liked {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: var(--primary-purple);
+        }
+
+        .property-favorite.liked i {
+            transform: scale(1.2);
+        }
+
+        /* Property Stats */
+        .property-stats-section {
+            background: var(--background-gradient);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: var(--primary-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .stat-description {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 25px;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: var(--text-gray);
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: var(--text-dark);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .properties-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .property-card {
+                margin: 0 auto;
+                max-width: 400px;
+            }
+
+            .filter-tabs {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+
+            .filter-options {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-select {
+                min-width: auto;
+                width: 100%;
+            }
+
+            .property-details {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+
+        /* Animation for filtering */
+        .property-card.hidden {
+            display: none;
+        }
+
+        .property-card.show {
+            animation: fadeInUp 0.5s ease;
+        }
+    </style>
+
+    <script>
+        // Property filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const areaFilter = document.getElementById('areaFilter');
+            const priceFilter = document.getElementById('priceFilter');
+            const resetFilters = document.getElementById('resetFilters');
+            const propertyCards = document.querySelectorAll('.property-card');
+            const propertyModal = document.getElementById('propertyModal');
+            const modalContent = document.getElementById('modalContent');
+            const modalClose = document.querySelector('.modal-close');
+
+            // Filter by category (tabs)
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    filterProperties();
+                });
+            });
+
+            // Filter by area and price
+            areaFilter.addEventListener('change', filterProperties);
+            priceFilter.addEventListener('change', filterProperties);
+
+            // Reset filters
+            resetFilters.addEventListener('click', function() {
+                filterTabs.forEach(t => t.classList.remove('active'));
+                filterTabs[0].classList.add('active');
+                areaFilter.value = '';
+                priceFilter.value = '';
+                filterProperties();
+            });
+
+            function filterProperties() {
+                const activeCategory = document.querySelector('.filter-tab.active').dataset.category;
+                const selectedArea = areaFilter.value;
+                const selectedPrice = priceFilter.value;
+
+                propertyCards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardArea = card.dataset.area;
+                    const cardPrice = parseFloat(card.dataset.price);
+
+                    let show = true;
+
+                    // Category filter
+                    if (activeCategory !== 'all' && cardCategory !== activeCategory) {
+                        show = false;
+                    }
+
+                    // Area filter
+                    if (selectedArea && cardArea !== selectedArea) {
+                        show = false;
+                    }
+
+                    // Price filter
+                    if (selectedPrice) {
+                        const [min, max] = selectedPrice.split('-').map(p => parseFloat(p) || Infinity);
+                        if (cardPrice < min * 10 || (max !== Infinity && cardPrice > max * 10)) {
+                            show = false;
+                        }
+                    }
+
+                    if (show) {
+                        card.classList.remove('hidden');
+                        card.classList.add('show');
+                    } else {
+                        card.classList.add('hidden');
+                        card.classList.remove('show');
+                    }
+                });
+            }
+
+            // Property contact buttons
+            const contactButtons = document.querySelectorAll('.property-contact');
+            contactButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const propertyName = this.dataset.property;
+                    showPropertyModal(propertyName);
+                });
+            });
+
+            // Favorite buttons
+            const favoriteButtons = document.querySelectorAll('.property-favorite');
+            favoriteButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.classList.toggle('liked');
+                    const icon = this.querySelector('i');
+                    if (this.classList.contains('liked')) {
+                        icon.classList.remove('far');
+                        icon.classList.add('fas');
+                    } else {
+                        icon.classList.remove('fas');
+                        icon.classList.add('far');
+                    }
+                });
+            });
+
+            // Modal functionality
+            function showPropertyModal(propertyName) {
+                modalContent.innerHTML = `
+                    <h2>${propertyName}</h2>
+                    <p>この物件の詳細情報をご希望の方は、お問い合わせフォームからご連絡ください。</p>
+                    <div style="margin-top: 30px; text-align: center;">
+                        <a href="contact.html?property=${encodeURIComponent(propertyName)}" class="btn-primary">お問い合わせフォームへ</a>
+                        <button onclick="window.open('tel:097-529-5834')" class="btn-secondary" style="margin-left: 10px;">今すぐ電話</button>
+                    </div>
+                `;
+                propertyModal.style.display = 'block';
+            }
+
+            modalClose.addEventListener('click', function() {
+                propertyModal.style.display = 'none';
+            });
+
+            window.addEventListener('click', function(event) {
+                if (event.target === propertyModal) {
+                    propertyModal.style.display = 'none';
+                }
+            });
+
+            // Initial filter
+            filterProperties();
+        });
+    </script>
+</body>
+</html>
